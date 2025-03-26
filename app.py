@@ -1,18 +1,10 @@
 import streamlit as st
 import requests
 import json
-from dotenv import load_dotenv
-import os
 from validations import is_valid_prompt
-from os.path import join, dirname
-
-# Load env vars
-dotenv_path = join(dirname(__file__), '.env')
-load_dotenv(dotenv_path)
-
 # Config
-URL = os.environ.get("STABILITY_AI_API_URL")
-API_KEY = os.environ.get("STABILITY_AI_SECRET_KEY")
+URL = "https://modelslab.com/api/v6/realtime/text2img"
+API_KEY = "zn8Fji81He22rG9OsL2nqPkThmMG6t3kZgtxGiECrTsJIBhwA9XuXahi2koz"
 
 st.set_page_config(page_title="Jewelry Image Generator", layout="wide")
 st.title("💍 OLE AI Jewelry Image Generator")
