@@ -3,8 +3,8 @@ import requests
 import json
 from validations import is_valid_prompt
 # Config
-URL = "https://modelslab.com/api/v6/realtime/text2img"
-API_KEY = "zn8Fji81He22rG9OsL2nqPkThmMG6t3kZgtxGiECrTsJIBhwA9XuXahi2koz"
+URL = st.secrets["api_url"]
+API_KEY = st.secrets["api_key"]
 
 st.set_page_config(page_title="Jewelry Image Generator", layout="wide")
 st.title("💍 OLE AI Jewelry Image Generator")
